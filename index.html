@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MultiStep Register form</title>
+</head>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    background-image:url(blur-radial.png);
+    height:100vh;
+    font-family:sans-serif;
+  }
+  .outer{
+    display:flex;
+    justify-content: center;
+    
+  }
+  .inner{
+    margin: 100px 0;
+    padding:30px 20px;
+    height:auto;
+    width:400px;
+    background-color: rgb(42, 39, 39);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+  }
+  h2{
+    padding:25px 0px;
+    color:white;
+    font-size:20px;
+  }
+  .text-heading{
+    margin: 15px 0px 10px 0;
+    color:rgb(201, 196, 196);
+    font-size: 12px;
+  }
+  .text{
+    padding:15px 90px;
+    border-radius: 10px;
+    background-color: rgb(58, 53, 62);
+    border:1px solid gray;
+  }
+  .btn{
+    padding:10px 30px;
+    margin: 30px 110px 15px 110px;
+    border-radius: 20px;
+    background-color: blueviolet;
+    color:white;
+    font-weight: bold;
+    border: none;
+  }
+  a{
+    text-decoration: none;
+     color:white;
+  }
+  </style>
+<body>
+
+  <div class="outer">
+    <div class="inner">
+      <h2>Register</h2>
+      <div class="text-heading">Name</div>
+      <input id="name" class="text" type="text" placeholder="Enter your name">
+      <div class="text-heading">Email</div>
+      <input id="email" class="text" type="email" placeholder="Example@gmail.com">
+      <button  id="btn" class="btn"><a href="next.html">Continue</a></button>
+
+    </div>
+  </div>
+  
+  <script src="index.js"></script>
+</body>
+</html>
